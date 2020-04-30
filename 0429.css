@@ -1,0 +1,128 @@
+/* ページ共通設定 */
+html,body {
+    font-family: 'Times New Roman', Times, serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+* {
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+/* 背景設定 */
+.split-box{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+}
+.left-box{
+    left: 0;
+    background-color: rgba(0,0,0,0.8);
+    color: #fff;
+}
+.right-box{
+    right: 0;
+    background-color: #fff;
+    color: rgba(0,0,0,0.8);
+    overflow-y: scroll;
+}
+/* 左側 */
+.menu-box{
+    position: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 50px 0 50px auto;
+}
+.menu-box h2{
+    margin: 0;
+    font-size: 64px;
+    cursor: context-menu;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.menu a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.1);
+    font-size: 32px;
+    margin: 20px auto 0 50px;
+    visibility: hidden;
+    transition: all 3s;
+}
+.menu-box ::after{
+    position: fixed;
+    content: "";
+    top: 130px;    
+    right: 0;
+    width: 0;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.9);
+    transition: all 0.5s ease 0s;
+}
+.menu-box :hover::after{
+    width: 100%;
+}
+.menu-box :hover + .menu a{
+    visibility: visible;
+    color: rgba(255, 255, 255, 0.9);
+    transition: all 1s ease 0s;
+}
+.menu a:hover{
+    visibility: visible;
+    color: rgba(255, 255, 255, 0.9);
+    transition: all 0.5s ease 0s;
+}
+/* SNSリンク */
+.links{
+    margin: 0;
+    display: inline-block;
+    position: fixed;
+    top: 400px;
+    left: 200px;
+}
+.icon{
+    font-size: 50px;
+    opacity: 0.4;
+    color: #fff;
+    padding: 0 5px;
+}
+.icon:hover{
+    color: #fff;
+    opacity: 0.9;
+    transition: all 0.8s;
+}
+/* 右側 */
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    margin: 150px 0 100px 0;
+    padding-bottom: 50px;
+}
+#content2{
+    margin: 0;
+}
+.content h2{
+    font-size: 32px;
+}
+.content p{
+    font-size: 20px;
+}
+/* slider設定 */
+.slider {
+    margin-top: 50px;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position-y: 30%;
+    z-index: 1;
+    color: rgba(255, 255, 255, 0.8);
+}

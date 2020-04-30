@@ -36,6 +36,8 @@
         position: fixed;
         top: 60px;
         left: 320px;
+        display: flex;
+        flex-direction: row;
     }
     .icon{
         font-size: 32px;

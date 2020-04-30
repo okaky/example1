@@ -33,9 +33,9 @@
         margin: 20px 15px 0 0;
     }
     .links{
-        position: fixed;
+        position: absolute;
         top: 60px;
-        left: 320px;
+        right: 30px;
         display: flex;
         flex-direction: row;
     }

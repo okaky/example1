@@ -1,0 +1,54 @@
+@media screen and (max-width:600px) {
+    .split-box{
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+    /* メニューバー */
+    .left-box{
+        position: fixed;
+        height: 120px;
+        margin: 0;
+        z-index: 100;
+    }
+    .menu-box{
+        position: fixed;
+        margin: 20px 20px;
+    }
+    .menu-box h2{
+        font-size: 32px;
+    }
+    .menu{
+        display: flex;
+        flex-direction: row;
+    }
+    .menu-box :hover::after{
+        width: 0%;
+    }
+    .menu a{
+        visibility: visible;
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.9);
+        font-size: 16px;
+        margin: 20px 15px 0 0;
+    }
+    .links{
+        position: fixed;
+        top: 60px;
+        left: 320px;
+    }
+    .icon{
+        font-size: 32px;
+        opacity: 0.9;
+    }
+    /* コンテンツ */
+    .right-box{
+        padding-top: 120px;
+    }
+    #content2{
+        margin-top: 0;
+    }
+    .content{
+        padding-top: 100px;
+    }
+}
